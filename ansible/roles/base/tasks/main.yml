@@ -1,0 +1,6 @@
+- name: Write hi to /tmp
+  ansible.builtin.lineinfile:
+    path: /tmp/hello.txt
+    line: "Hello!!!"
+    create: true
+    mode: "0644"

@@ -1,0 +1,12 @@
+---
+- name: Base setup
+  hosts: base
+  become: true
+  roles:
+    - base
+
+- name: Install Docker
+  hosts: docker
+  become: true
+  roles:
+    - docker
