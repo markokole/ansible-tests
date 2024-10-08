@@ -1,12 +1,12 @@
 ---
 - name: Base setup
-  hosts: base
+  hosts: db
   become: true
   roles:
     - base
 
 - name: Install Postgres
-  hosts: postgres
+  hosts: db
   become: true
   roles:
     - postgres16

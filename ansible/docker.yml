@@ -1,12 +1,12 @@
 ---
 - name: Base setup
-  hosts: base
+  hosts: app
   become: true
   roles:
     - base
 
 - name: Install Docker
-  hosts: docker
+  hosts: app
   become: true
   roles:
     - docker
