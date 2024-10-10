@@ -1,1 +1,8 @@
+[app]
+10.0.0.4 ansible_host=10.0.0.4 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
 
+[db]
+10.0.0.5 ansible_host=10.0.0.5 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+
+[web]
+10.0.0.7 ansible_host=10.0.0.7 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
